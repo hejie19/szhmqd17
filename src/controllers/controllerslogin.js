@@ -19,3 +19,7 @@ exports.img=(req,res)=>{
         });
         res.end(imgbase64);
 }
+
+exports.register=(req,res)=>{
+    res.sendFile(path.join(__dirname,"../statics/views/register.html"))
+}
